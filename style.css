@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
   max-width: 375px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 800;
 }
 
 .nav-section {
@@ -15,12 +20,13 @@
   padding: 1.5rem;
 }
 
-header {
+header,
+.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem 1.5rem;
+  padding: 114px 24px;
   gap: 12px;
 }
 
@@ -31,11 +37,11 @@ header > img {
   background-position: center;
 }
 
-.header-section h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+.header-section {
   color: #172b4d;
-  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .header-section p {
@@ -52,12 +58,143 @@ header > img {
 
 .social-links-container {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  flex-direction: row;
 }
 
 .social-links-container img {
   width: 1.2rem;
   margin-right: 1rem;
-  /* stylelint-disable-next-line no-missing-end-of-source-newline */
+}
+
+.works {
+  display: grid;
+  padding: 114px 24px;
+  background-color: #f7f7f9;
+  gap: 88px;
+}
+
+.layout {
+  background-color: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 12px;
+}
+
+.project-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  font-size: 16px;
+  background: none;
+}
+
+.skilset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frame12 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.frame7 {
+  display: flex;
+  padding: 16px 26px 16px 12px;
+  align-items: center;
+  gap: 12px;
+}
+
+.languages {
+  width: 237px;
+  color: #000;
+  font-size: 20px;
+}
+
+.language-list {
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.framework {
+  width: 237px;
+  color: #000;
+  font-size: 20px;
+}
+
+.seperator {
+  width: 327px;
+  height: 1px;
+  background: #dfe1e6;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+  border-radius: 80px 0 0 0;
+  gap: 16px;
+  margin-top: 100px;
+  background-image: url(Assets/contact\ form\ shapes-mobile@2x.png);
+  background-color: #6070ff;
+  background-size: contain;
+  background-position-x: 114px;
+  background-repeat: no-repeat;
+}
+
+.contact-me {
+  color: #fff;
+  font-size: 40px;
+}
+
+.contact_desc {
+  color: #ebebff;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+
+input {
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background: #fff;
+  color: #172b4d;
+  font-size: 15px;
+  text-indent: 4%;
+}
+
+textarea {
+  width: 327px;
+  height: 170px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background: #fff;
+  font-size: 13px;
+  text-indent: 4%;
+}
+
+.get-in-touch {
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #fff;
+  color: #6070ff;
+  text-align: center;
+  font-size: 17px;
+  align-self: flex-start;
 }
